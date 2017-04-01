@@ -6,7 +6,7 @@
  * Time: 12:25
  */
 
-namespace AppBundle\Controller;
+namespace ApiBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use FOS\RestBundle\Controller\FOSRestController;
