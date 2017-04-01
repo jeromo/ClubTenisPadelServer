@@ -1,0 +1,4 @@
+sample:
+    resource: 'AppBundle\Controller\SampleController'
+    type:     rest
+    prefix:   /api/v1.0
