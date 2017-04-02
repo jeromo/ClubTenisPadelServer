@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f55ed36a-26e2-4c5f-8e63-ea6000a908cb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/features/api-sample-working.feature" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ClubTenisPadelServer.iml" afterPath="$PROJECT_DIR$/.idea/ClubTenisPadelServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-    </list>
+    <list default="true" id="f55ed36a-26e2-4c5f-8e63-ea6000a908cb" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/features/bootstrap/FeatureContext.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="291">
-              <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+              <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
               <folding>
                 <element signature="e#7#39#0#PHP" expanded="true" />
               </folding>
@@ -491,7 +484,7 @@
       <workItem from="1490794567808" duration="33831000" />
       <workItem from="1491061209174" duration="142000" />
       <workItem from="1491061533489" duration="3937000" />
-      <workItem from="1491065490667" duration="7649000" />
+      <workItem from="1491065490667" duration="7948000" />
     </task>
     <servers />
   </component>
@@ -528,7 +521,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45559000" />
+    <option name="totallyTimeSpent" value="45858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1070" y="81" width="1437" height="1000" extended-state="0" />
@@ -953,7 +946,7 @@
     <entry file="file://$PROJECT_DIR$/features/bootstrap/FeatureContext.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
-          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
           <folding>
             <element signature="e#7#39#0#PHP" expanded="true" />
           </folding>
