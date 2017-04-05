@@ -8,9 +8,13 @@ app:
 #fos_oauth_server_authorize:
 #    resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
 
-#fos_user:
-#    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
 api:
     resource: '@ApiBundle/Resources/config/routing.yml'
     prefix:   /api/v1.0
+
+api_login_check:
+    path: /api/v1.0/login_check
+
