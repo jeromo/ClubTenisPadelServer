@@ -17,3 +17,6 @@ services:
 #            - "@fos_oauth_server.user_provider"
 #            - "@security.encoder_factory"
 #        public: false
+    app.jwt_token_authenticator:
+        class: ApiBundle\Security\JwtAuthenticator
+        arguments: ['@doctrine.orm.entity_manager', '@lexik_jwt_authentication.encoder']
