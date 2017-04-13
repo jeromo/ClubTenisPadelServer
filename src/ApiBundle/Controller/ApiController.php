@@ -54,7 +54,7 @@ class ApiController extends FOSRestController
         $token = $this->get('lexik_jwt_authentication.encoder')
             ->encode(['username' => $user->getUsername()]);
 
-        // Return genereted tocken
+        // Return generated tocken
         return ['token' => $token];
     }
 

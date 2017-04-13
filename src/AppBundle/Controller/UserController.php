@@ -27,10 +27,12 @@ class UserController extends FOSRestController
      */
     public function getAction()
     {
-        $restresult = $this->getDoctrine()->getRepository('AppBundle:User')->findAll();
+        $restresult = $this->getDoctrine()
+            ->getRepository('AppBundle:User')
+            ->findAll();
         if ($restresult === null) {
             return new View("there are no users exist", Response::HTTP_NOT_FOUND);
         }
-        return $restresult;
+        return new View($restresult);
     }
 }
