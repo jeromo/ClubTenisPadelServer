@@ -23,8 +23,10 @@ DROP TABLE IF EXISTS `team_player`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `team_player` (
-  `id_team` int(11) DEFAULT NULL,
-  `id_player` int(11) DEFAULT NULL,
+  `id_team` int(11) NOT NULL,
+  `id_player` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
   KEY `fk_team_player_1_idx` (`id_team`),
   KEY `fk_team_player_2_idx` (`id_player`),
   CONSTRAINT `fk_team_player_1` FOREIGN KEY (`id_team`) REFERENCES `team` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
@@ -50,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-13 21:38:03
+-- Dump completed on 2017-04-14 13:01:54

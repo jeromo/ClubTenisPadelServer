@@ -1,0 +1,108 @@
+AppBundle\Entity\CtpMatch:
+    type: entity
+    table: ctp_match
+    indexes:
+        fk_ctp_match_1_idx:
+            columns:
+                - id_competition
+        fk_ctp_match_2_idx:
+            columns:
+                - id_journey
+        fk_ctp_match_3_idx:
+            columns:
+                - id_team_1
+        fk_ctp_match_4_idx:
+            columns:
+                - id_team_2
+        fk_ctp_match_5_idx:
+            columns:
+                - winner
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        state:
+            type: string
+            nullable: true
+            length: 45
+            options:
+                fixed: false
+        set1:
+            type: string
+            nullable: true
+            length: 45
+            options:
+                fixed: false
+            column: set_1
+        set2:
+            type: string
+            nullable: true
+            length: 45
+            options:
+                fixed: false
+            column: set_2
+        set3:
+            type: string
+            nullable: true
+            length: 45
+            options:
+                fixed: false
+            column: set_3
+    manyToOne:
+        idCompetition:
+            targetEntity: Competition
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_competition:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idJourney:
+            targetEntity: Journey
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_journey:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idTeam1:
+            targetEntity: Team
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_team_1:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idTeam2:
+            targetEntity: Team
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_team_2:
+                    referencedColumnName: id
+            orphanRemoval: false
+        winner:
+            targetEntity: Team
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                winner:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

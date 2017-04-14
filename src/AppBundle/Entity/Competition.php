@@ -1,75 +1,127 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: jrojo
- * Date: 13/04/17
- * Time: 17:20
- */
 
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * Competition
+ *
  * @ORM\Table(name="competition")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\CompetitionRepository")
  */
 class Competition
 {
     /**
-     * @ORM\id
-     * @ORM\Column(type="integer")
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    protected $id;
-    /**
-     * @ORM\name
-     * @ORM\Column(type="varchar(45)")
-     */
-    protected $name;
-    /**
-     * @ORM\description
-     * @ORM\Column(type="varchar(45)")
-     */
-    protected $description;
-    /**
-     * @ORM\active
-     * @ORM\Column(type="boolean")
-     */
-    protected $active;
+    private $id;
 
-    public function __construct()
-    {
-        parent::__construct();
-        // your own logic
-    }
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=45, unique=true)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=45, nullable=true)
+     */
+    private $description;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="active", type="boolean")
+     */
+    private $active;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
     public function getId()
     {
         return $this->id;
     }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     *
+     * @return Competition
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string
+     */
     public function getName()
     {
         return $this->name;
     }
-    public function setName($name)
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Competition
+     */
+    public function setDescription($description)
     {
-        $this->name = $name;
+        $this->description = $description;
+
+        return $this;
     }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
     public function getDescription()
     {
         return $this->description;
     }
-    public function setDescription($description)
+
+    /**
+     * Set active
+     *
+     * @param boolean $active
+     *
+     * @return Competition
+     */
+    public function setActive($active)
     {
-        $this->description = $description;
+        $this->active = $active;
+
+        return $this;
     }
+
+    /**
+     * Get active
+     *
+     * @return bool
+     */
     public function getActive()
     {
         return $this->active;
     }
-    public function setActive($active)
-    {
-        $this->active= $active;
-    }
-
 }

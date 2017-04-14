@@ -1,0 +1,34 @@
+AppBundle\Entity\Journey:
+    type: entity
+    table: journey
+    indexes:
+        fk_competition_idx:
+            columns:
+                - id_competition
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        number:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+    manyToOne:
+        idCompetition:
+            targetEntity: Competition
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_competition:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

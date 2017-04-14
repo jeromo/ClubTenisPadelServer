@@ -1,0 +1,38 @@
+AppBundle\Entity\Player:
+    type: entity
+    table: player
+    indexes:
+        fk_player_1_idx:
+            columns:
+                - id_fos_user
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        description:
+            type: string
+            nullable: true
+            length: 45
+            options:
+                fixed: false
+        active:
+            type: boolean
+            nullable: true
+    manyToOne:
+        idFosUser:
+            targetEntity: FosUser
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_fos_user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
