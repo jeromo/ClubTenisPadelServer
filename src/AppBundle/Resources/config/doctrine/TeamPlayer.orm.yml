@@ -1,0 +1,41 @@
+AppBundle\Entity\TeamPlayer:
+    type: entity
+    table: team_player
+    indexes:
+        fk_team_player_1_idx:
+            columns:
+                - id_team
+        fk_team_player_2_idx:
+            columns:
+                - id_player
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        idTeam:
+            targetEntity: Team
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_team:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idPlayer:
+            targetEntity: Player
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_player:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
