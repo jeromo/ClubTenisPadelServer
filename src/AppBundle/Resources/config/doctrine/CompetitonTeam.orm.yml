@@ -1,0 +1,41 @@
+AppBundle\Entity\CompetitonTeam:
+    type: entity
+    table: competiton_team
+    indexes:
+        fk_competition_team_2_idx:
+            columns:
+                - id_team
+        fk_competition_team_1:
+            columns:
+                - id_competition
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        idCompetition:
+            targetEntity: Competition
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_competition:
+                    referencedColumnName: id
+            orphanRemoval: false
+        idTeam:
+            targetEntity: Team
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                id_team:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }
