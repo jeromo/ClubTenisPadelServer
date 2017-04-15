@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f55ed36a-26e2-4c5f-8e63-ea6000a908cb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Competition.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/bd_diagram.mwb" afterPath="$PROJECT_DIR$/doc/bd_diagram.mwb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/sql/club_competition.sql" afterPath="$PROJECT_DIR$/doc/sql/club_competition.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/sql/club_competiton_team.sql" afterPath="$PROJECT_DIR$/doc/sql/club_competiton_team.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/sql/club_ctp_match.sql" afterPath="$PROJECT_DIR$/doc/sql/club_ctp_match.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/sql/club_fos_user.sql" afterPath="$PROJECT_DIR$/doc/sql/club_fos_user.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/sql/club_journey.sql" afterPath="$PROJECT_DIR$/doc/sql/club_journey.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/sql/club_player.sql" afterPath="$PROJECT_DIR$/doc/sql/club_player.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/sql/club_team.sql" afterPath="$PROJECT_DIR$/doc/sql/club_team.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/sql/club_team_player.sql" afterPath="$PROJECT_DIR$/doc/sql/club_team_player.sql" />
-    </list>
+    <list default="true" id="f55ed36a-26e2-4c5f-8e63-ea6000a908cb" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Team.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="522">
-              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Competition.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="576">
-              <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+              <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -1373,7 +1361,7 @@
       <workItem from="1491919559701" duration="6017000" />
       <workItem from="1492077081368" duration="199000" />
       <workItem from="1492077310191" duration="2374000" />
-      <workItem from="1492079742128" duration="9529000" />
+      <workItem from="1492079742128" duration="10098000" />
     </task>
     <servers />
   </component>
@@ -1410,11 +1398,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82934000" />
+    <option name="totallyTimeSpent" value="83503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1028" y="87" width="1437" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24982603" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1865,7 +1852,7 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Competition.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
-          <caret line="32" column="6" lean-forward="true" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+          <caret line="32" column="6" lean-forward="false" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1873,7 +1860,7 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Team.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
