@@ -2,43 +2,28 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
 /**
  * Competition
- *
- * @ORM\Table(name="competition")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\CompetitionRepository")
  */
 class Competition
 {
     /**
-     * @var int
-     *
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @var integer
      */
     private $id;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="name", type="string", length=45, unique=true)
      */
     private $name;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="description", type="string", length=45, nullable=true)
      */
     private $description;
 
     /**
-     * @var bool
-     *
-     * @ORM\Column(name="active", type="boolean")
+     * @var boolean
      */
     private $active;
 
@@ -46,7 +31,7 @@ class Competition
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -118,10 +103,11 @@ class Competition
     /**
      * Get active
      *
-     * @return bool
+     * @return boolean
      */
     public function getActive()
     {
         return $this->active;
     }
 }
+
