@@ -81,4 +81,3 @@ class CompetitonTeam
         return $this->idTeam;
     }
 }
-

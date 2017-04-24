@@ -81,4 +81,3 @@ class Journey
         return $this->idCompetition;
     }
 }
-

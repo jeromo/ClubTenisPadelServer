@@ -284,4 +284,3 @@ class CtpMatch
         return $this->winner;
     }
 }
-
