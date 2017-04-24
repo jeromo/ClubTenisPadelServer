@@ -110,4 +110,3 @@ class Player
         return $this->idFosUser;
     }
 }
-

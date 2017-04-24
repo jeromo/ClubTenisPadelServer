@@ -81,4 +81,3 @@ class TeamPlayer
         return $this->idPlayer;
     }
 }
-
